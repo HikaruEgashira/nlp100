@@ -3,9 +3,9 @@
 main :: IO()
 main = do
     scr_reverse
-    scr_stringIndex
+    scr_index
     scr_concat
-    scr_countStr
+    scr_count
 
 -- | util
 --
@@ -27,8 +27,8 @@ scr_reverse = do
 --
 -- 「パタトクカシーー」という文字列の1,3,5,7文字目を取り出して連結した文字列を得よ．
 --
-scr_stringIndex :: IO()
-scr_stringIndex = do
+scr_index :: IO()
+scr_index = do
     title "002"
     p $ map (\x -> "パタトクカシーー" !! x) [1, 3, 5, 7]
 
@@ -50,7 +50,7 @@ scr_concat = do
 -- という文を単語に分解し，各単語の（アルファベットの）文字数を
 -- 先頭から出現順に並べたリストを作成せよ．
 --
-scr_countStr :: IO()
-scr_countStr = do
+scr_count :: IO()
+scr_count = do
     title "004"
     p $ "TODO"
